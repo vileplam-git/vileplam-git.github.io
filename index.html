@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Vileplam Enterprises LTD.</title>
+	<title>Vileplam Enterprises Ltd</title>
+	<meta name="description" content="Vileplam Enterprises Ltd is a Cyprus holding and service company: shareholder of a group of companies active in iGaming, software and digital assets, and provider of services and financing to them.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-	<!-- WebApp Stuff
+	<meta property="og:title" content="Vileplam Enterprises Ltd">
+	<meta property="og:description" content="Holding & service company for a group of technology companies in iGaming, software and digital assets.">
+	<meta property="og:image" content="https://vileplam.com.cy/vileplam-logo.png">
+	<meta property="og:type" content="website">
+
+	<!-- WebApp / icons
 	================================================================================================================== -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="">
-	<meta name='viewport' content='viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1'>
 	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-title" content="Vileplam Enterprises LTD">
-
+	<meta name="apple-mobile-web-app-title" content="Vileplam">
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -21,151 +25,456 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#07182f">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#07182f">
 
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,500;1,700&display=swap');
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/styles.css">
 
-		/*@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap"');*/
-
-		html, body {
-			background-color    : #292931;
-			background-image    : url("bg.png");
-			background-size     : cover; /* <------ */
-			background-repeat   : no-repeat;
-			background-position : center center;
-			height              : 100%;
-			padding             : 0;
-			margin              : 0;
-		}
-
-		.container {
-			display         : flex;
-			flex-direction  : column;
-			align-items     : center;
-			justify-content : center;
-			row-gap: 40px;
-			height          : 100%;
-		}
-
-		.image {
-			margin    : 0;
-			max-width : 250px;
-		}
-
-		.text {
-			/*font-family: 'Geologica', sans-serif;*/
-			font-family: 'IBM Plex Sans', sans-serif;
-			color                     : #ffffff;
-			/*-webkit-text-stroke-width : 1px;*/
-			/*-webkit-text-stroke-color : #999999;*/
-			/*background                : -webkit-linear-gradient(#424242, #000000);*/
-			/*-webkit-background-clip   : text;*/
-			/*-webkit-text-fill-color   : transparent;*/
-			/*text-shadow: 0 0 4px #a7a7a7;*/
-			margin                    : 0;
-			font-size                 : 4vw;
-			max-width                 : 75vw;
-			text-align                : center;
-		}
-
-		.text-email {
-			/*font-family: 'Geologica', sans-serif;*/
-			font-family: 'IBM Plex Sans', sans-serif;
-			color                     : #efefef;
-			/*-webkit-text-stroke-width : 1px;*/
-			/*-webkit-text-stroke-color : #999999;*/
-			/*background                : -webkit-linear-gradient(#424242, #000000);*/
-			/*-webkit-background-clip   : text;*/
-			/*-webkit-text-fill-color   : transparent;*/
-			/*text-shadow: 0 0 4px #a7a7a7;*/
-			margin                    : 0;
-			font-size                 : 3vw;
-			max-width                 : 75vw;
-			text-align                : center;
-		}
-
-		@media (min-width : 576px) {
-			.image {
-				max-width : 60vw;
-			}
-
-			.text {
-				font-size : 4vw;
-				max-width : 75vw;
-			}
-
-			.text-email{
-				font-size :3vw;
-				max-width : 75vw;
-			}
-		}
-
-		/*Medium devices (tablets, 768px and up)*/
-		@media (min-width : 768px) {
-			.image {
-				max-width : 250px;
-			}
-
-			.text {
-				font-size : 3.5vw;
-				max-width : 50vw;
-			}
-
-			.text-email{
-				font-size : 3vw;
-				max-width : 50vw;
-			}
-		}
-
-		/*Large devices (desktops, 992px and up)*/
-		@media (min-width : 992px) {
-			.image {
-				max-width : 250px;
-			}
-
-			.text {
-				font-size : 2.5vw;
-				max-width : 50vw;
-			}
-
-			.text-email{
-				font-size : 2vw;
-				max-width : 90vw;
-			}
-		}
-
-		/*Extra large devices (large desktops, 1200px and up)*/
-		@media (min-width : 1200px) {
-			.image {
-				max-width : 250px;
-			}
-			.text {
-				font-size : 1.5vw;
-				max-width : 50vw;
-			}
-
-			.text-email{
-				font-size : 1vw;
-				max-width : 90vw;
-			}
-
-		}
-	</style>
+	<!-- Enables route-based view switching; without JS every section is simply shown in sequence. -->
+	<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-<div class="container">
-	<a href="https://vileplam.com.cy" target="_self"><img class="image" alt="vileplam logo" src="vileplam-logo.png"></a>
-	<p style="text-rendering : optimizeLegibility; font-family: 'IBM Plex Sans', sans-serif" class="text">Vileplam Enterprises LTD</p>
-	<p style="text-rendering : optimizeLegibility; font-family: 'IBM Plex Sans', sans-serif" class="text">7 Thiseos, Strovolos, 2042 Nicosia, Cyprus </p>
-	<a style="text-rendering : optimizeLegibility; font-family: 'IBM Plex Sans', sans-serif" class="text-email" href="mailto:office@vileplam.com.cy">office@vileplam.com.cy</a>
-</div>
+<canvas id="facets" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+	<div class="wrap header-inner">
+		<a class="brand" href="#/" aria-label="Vileplam Enterprises – home">
+			<img src="vileplam-logo.png" alt="" width="44" height="43">
+			<span class="brand-text">Vileplam<span class="brand-sub">Enterprises Ltd</span></span>
+		</a>
+
+		<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+			<span class="sr-only">Menu</span>
+			<span class="bar"></span><span class="bar"></span><span class="bar"></span>
+		</button>
+
+		<nav id="site-nav" class="site-nav" aria-label="Main">
+			<a href="#/" data-nav="home">Home</a>
+			<a href="#/company" data-nav="company">Company</a>
+			<a href="#/group" data-nav="group">Group</a>
+			<a href="#/ventures" data-nav="ventures">Ventures</a>
+			<a href="#/contact" data-nav="contact" class="nav-cta">Contact</a>
+		</nav>
+	</div>
+</header>
+
+<main id="main" tabindex="-1">
+
+	<!-- ============================================================ HOME -->
+	<section class="view" data-route="home" data-title="Vileplam Enterprises Ltd" aria-labelledby="home-h">
+		<div class="wrap hero">
+			<div class="hero-copy">
+				<p class="eyebrow">Holding &amp; Service Company · Nicosia, Cyprus</p>
+				<h1 id="home-h">Invested in <span class="accent">new technologies</span>.</h1>
+				<p class="lead">
+					Vileplam Enterprises Ltd is a Cyprus holding and service company. It holds shares in companies
+					active in iGaming, software development and digital assets, provides services and financing
+					to them, and invests in new technologies.
+				</p>
+				<div class="hero-actions">
+					<a class="btn btn-primary" href="#/group">Explore the group</a>
+					<a class="btn btn-ghost" href="#/contact">Get in touch</a>
+				</div>
+			</div>
+			<div class="hero-art">
+				<div class="logo-halo">
+					<img src="vileplam-logo.png" alt="Vileplam logo" width="788" height="767">
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap">
+			<ul class="pillars">
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg>
+					</span>
+					<h2>Holding</h2>
+					<p>100% shareholder of our subsidiaries, which operate across Curaçao, Cyprus and Switzerland.</p>
+				</li>
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg>
+					</span>
+					<h2>Business services</h2>
+					<p>Administrative and consulting services provided to group companies under service agreements.</p>
+				</li>
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+					</span>
+					<h2>Group financing</h2>
+					<p>Loans to group companies and investment of the company's own surplus funds.</p>
+				</li>
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><path d="m12 2 8 5v10l-8 5-8-5V7l8-5Z"/><path d="m12 2v20M4 7l16 10M20 7 4 17"/></svg>
+					</span>
+					<h2>New-tech investments</h2>
+					<p>Investing in projects and companies in new technologies, and in digital assets.</p>
+					<a class="card-link" href="#/ventures">Vileplam Ventures <span aria-hidden="true">→</span></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrap">
+			<div class="strip">
+				<div class="stat"><span class="stat-num">3</span><span class="stat-label">Wholly owned companies</span></div>
+				<div class="stat"><span class="stat-num">3</span><span class="stat-label">Jurisdictions</span></div>
+				<div class="stat"><span class="stat-num">100%</span><span class="stat-label">Ownership across the group</span></div>
+				<div class="stat"><span class="stat-num">0</span><span class="stat-label">Third-party funds managed</span></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============================================================ COMPANY -->
+	<section class="view" data-route="company" data-title="Company · Vileplam Enterprises Ltd" aria-labelledby="company-h">
+		<div class="wrap page-head">
+			<p class="eyebrow">Company</p>
+			<h1 id="company-h">Shareholder, service provider, investor.</h1>
+			<p class="lead">
+				Vileplam Enterprises Ltd, based in Nicosia, Cyprus, owns its subsidiaries outright, provides services
+				and financing to group companies, and invests in new technologies.
+			</p>
+		</div>
+
+		<div class="wrap two-col">
+			<article class="panel">
+				<h2>What we do</h2>
+				<dl class="feature-list">
+					<div>
+						<dt>Shareholder of subsidiaries</dt>
+						<dd>Vileplam holds 100% of the shares in its subsidiaries. Each subsidiary is managed by its own board in its own jurisdiction.</dd>
+					</div>
+					<div>
+						<dt>Business services</dt>
+						<dd>Vileplam provides administrative and consulting services to group companies under service agreements, for a fee.</dd>
+					</div>
+					<div>
+						<dt>Group financing</dt>
+						<dd>Vileplam provides loans to group companies. It invests its own surplus funds in fiat, digital assets and funds.</dd>
+					</div>
+					<div>
+						<dt>Investing in new technologies</dt>
+						<dd>Vileplam invests in projects and companies in new technologies.</dd>
+					</div>
+				</dl>
+			</article>
+
+			<article class="panel">
+				<h2>How we earn</h2>
+				<ul class="income">
+					<li><span class="dot" aria-hidden="true"></span><div><strong>Service &amp; consulting fees</strong><span>charged to group companies for services provided.</span></div></li>
+					<li><span class="dot" aria-hidden="true"></span><div><strong>Interest income</strong><span>on loans to group companies.</span></div></li>
+					<li><span class="dot" aria-hidden="true"></span><div><strong>Dividends</strong><span>paid by our subsidiaries.</span></div></li>
+					<li><span class="dot" aria-hidden="true"></span><div><strong>Trading profits</strong><span>from investing our own funds in digital assets.</span></div></li>
+				</ul>
+				<p class="note">
+					<strong>Own funds only.</strong> Vileplam invests only its own capital. We do not accept
+					or manage third-party money.
+				</p>
+			</article>
+		</div>
+
+		<div class="wrap">
+			<div class="facts">
+				<h2 class="sr-only">Corporate facts</h2>
+				<div><span class="k">Legal name</span><span class="v">Vileplam Enterprises Ltd</span></div>
+				<div><span class="k">Role</span><span class="v">Holding &amp; service company</span></div>
+				<div><span class="k">Registered office</span><span class="v">7 Thiseos, Strovolos, 2042 Nicosia, Cyprus</span></div>
+				<div><span class="k">CRS / FATCA classification</span><span class="v">Passive NFE</span></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============================================================ GROUP -->
+	<section class="view" data-route="group" data-title="Group · Vileplam Enterprises Ltd" aria-labelledby="group-h">
+		<div class="wrap page-head">
+			<p class="eyebrow">Group structure</p>
+			<h1 id="group-h">Our group companies.</h1>
+			<p class="lead">
+				Each subsidiary is wholly owned by Vileplam and is managed by its own board in its own jurisdiction.
+			</p>
+		</div>
+
+		<div class="wrap">
+			<ol class="tree" aria-label="Group structure">
+				<li>
+					<div class="node node-root">
+						<img src="vileplam-logo.png" alt="" width="40" height="39">
+						<div>
+							<strong>Vileplam Enterprises Ltd</strong>
+							<span>Cyprus · Holding &amp; service company</span>
+						</div>
+					</div>
+					<ol>
+						<li>
+							<a class="node" href="#velorum">
+								<span class="share">100%</span>
+								<div><strong>Velorum Corporation N.V.</strong><span>Curaçao · iGaming operator</span></div>
+							</a>
+							<ol>
+								<li>
+									<a class="node" href="#vyking">
+										<span class="share">100%</span>
+										<div><strong>VSL Vyking Software Ltd</strong><span>Cyprus · iGaming software</span></div>
+									</a>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<a class="node" href="#dyves">
+								<span class="share">100%</span>
+								<div><strong>Dyves Group AG</strong><span>Switzerland · Digital assets</span></div>
+							</a>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+
+		<div class="wrap company-grid">
+			<article class="company card" id="velorum">
+				<header>
+					<span class="flag" aria-hidden="true">CW</span>
+					<div>
+						<h2>Velorum Corporation N.V.</h2>
+						<p class="where">Curaçao · 100% owned by Vileplam</p>
+					</div>
+				</header>
+				<p>
+					Velorum holds a Curaçao iGaming licence and runs the group's B2C brands.
+				</p>
+				<ul class="tags">
+					<li><a href="https://www.bonkersbet.com" target="_blank" rel="noopener">bonkersbet.com</a></li>
+					<li><a href="https://www.star7.casino" target="_blank" rel="noopener">star7.casino</a></li>
+				</ul>
+				<a class="ext" href="https://www.v3lorum.com" target="_blank" rel="noopener">v3lorum.com <span aria-hidden="true">↗</span></a>
+			</article>
+
+			<article class="company card" id="vyking">
+				<header>
+					<span class="flag" aria-hidden="true">CY</span>
+					<div>
+						<h2>VSL Vyking Software Ltd</h2>
+						<p class="where">Cyprus · 100% owned by Velorum</p>
+					</div>
+				</header>
+				<p>
+					A software development company building iGaming products. It also offers shared services
+					such as payment processing.
+				</p>
+				<ul class="tags">
+					<li>Content</li>
+					<li>Bonus engine</li>
+					<li>CRM</li>
+					<li>Platform</li>
+					<li>Frontend apps</li>
+					<li>Payment processing</li>
+				</ul>
+				<a class="ext" href="https://www.vyking.com" target="_blank" rel="noopener">vyking.com <span aria-hidden="true">↗</span></a>
+			</article>
+
+			<article class="company card" id="dyves">
+				<header>
+					<span class="flag" aria-hidden="true">CH</span>
+					<div>
+						<h2>Dyves Group AG</h2>
+						<p class="where">Switzerland · 100% owned by Vileplam</p>
+					</div>
+				</header>
+				<p>
+					Dyves holds digital-asset funds for its own investment. It does not manage third-party money,
+					and it can give advice on digital assets.
+				</p>
+				<ul class="tags">
+					<li>Digital assets</li>
+					<li>Own-account investment</li>
+					<li>Advisory</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+	<!-- ============================================================ VENTURES -->
+	<section class="view" data-route="ventures" data-title="Ventures · Vileplam Enterprises Ltd" aria-labelledby="ventures-h">
+		<div class="wrap page-head">
+			<p class="eyebrow">Vileplam Ventures</p>
+			<h1 id="ventures-h">Capital and experience for <span class="accent">ambitious teams</span>.</h1>
+			<p class="lead">
+				We invest in entrepreneurial teams and ideas in new technologies that have the potential to outgrow
+				their market, and we grow with them in a sustainable way.
+			</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="#/contact?topic=venture">Pitch your venture <span aria-hidden="true">→</span></a>
+			</div>
+		</div>
+
+		<div class="wrap">
+			<ul class="pillars">
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.2 7.2 10.8 16M15.8 7.2 13.2 16M8.5 6h7"/></svg>
+					</span>
+					<h2>Web3 &amp; DLT</h2>
+					<p>Blockchain infrastructure, distributed ledgers and the applications built on them.</p>
+				</li>
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9 9.5c0-1.4 1.3-2 3-2s3 .7 3 2-1.3 1.8-3 2.2-3 .9-3 2.3 1.3 2 3 2 3-.6 3-2M12 5.5v13"/></svg>
+					</span>
+					<h2>DeFi &amp; digital assets</h2>
+					<p>Decentralised finance, tokenisation and new models for digital value.</p>
+				</li>
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 14.5h4"/></svg>
+					</span>
+					<h2>Payments &amp; fintech</h2>
+					<p>Payment processing, financial infrastructure and the tools around them.</p>
+				</li>
+				<li class="card">
+					<span class="card-icon" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg>
+					</span>
+					<h2>Gaming &amp; software</h2>
+					<p>iGaming technology, platforms and software products with international reach.</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="wrap two-col ventures-cols">
+			<article class="panel">
+				<h2>More than capital</h2>
+				<p class="panel-text">
+					Vileplam Ventures is not only a source of funding. The people behind it come from finance,
+					business development, payments, marketing, operations and technology. That experience helps us
+					decide where to invest, and our founders can draw on it as they grow.
+				</p>
+				<ul class="tags">
+					<li>Finance</li>
+					<li>Business development</li>
+					<li>Payments</li>
+					<li>Marketing</li>
+					<li>Operations</li>
+					<li>Technology</li>
+				</ul>
+			</article>
+
+			<article class="panel">
+				<h2>What we look for</h2>
+				<ul class="income">
+					<li><span class="dot" aria-hidden="true"></span><div><strong>An extraordinary team</strong><span>founders with drive, skill and the ability to execute.</span></div></li>
+					<li><span class="dot" aria-hidden="true"></span><div><strong>Disruptive technology</strong><span>a product or idea that changes how a market works.</span></div></li>
+					<li><span class="dot" aria-hidden="true"></span><div><strong>Room to outgrow the market</strong><span>a scalable model with international potential.</span></div></li>
+					<li><span class="dot" aria-hidden="true"></span><div><strong>Sustainable growth</strong><span>a business built to last, not just to scale fast.</span></div></li>
+				</ul>
+				<p class="note">
+					<strong>Own funds only.</strong> Vileplam Ventures invests Vileplam's own capital. We do not raise,
+					pool or manage third-party money.
+				</p>
+			</article>
+		</div>
+
+		<div class="wrap">
+			<div class="cta-band">
+				<div>
+					<h2>Building something new?</h2>
+					<p>Tell us about your team, your product and where you want to take it.</p>
+				</div>
+				<a class="btn btn-primary" href="#/contact?topic=venture">Pitch your venture <span aria-hidden="true">→</span></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============================================================ CONTACT -->
+	<section class="view" data-route="contact" data-title="Contact · Vileplam Enterprises Ltd" aria-labelledby="contact-h">
+		<div class="wrap page-head">
+			<p class="eyebrow">Contact</p>
+			<h1 id="contact-h">Let's talk.</h1>
+			<p class="lead">Partnerships, investments or general questions. Send us a message and we'll reply by email.</p>
+		</div>
+
+		<div class="wrap contact-grid">
+			<form id="contact-form" class="panel form" novalidate>
+				<div class="field-row">
+					<label class="field">
+						<span>Name</span>
+						<input name="name" type="text" autocomplete="name" required maxlength="120">
+					</label>
+					<label class="field">
+						<span>Email</span>
+						<input name="email" type="email" autocomplete="email" required maxlength="200">
+					</label>
+				</div>
+				<div class="field-row">
+					<label class="field">
+						<span>Company <em>(optional)</em></span>
+						<input name="company" type="text" autocomplete="organization" maxlength="160">
+					</label>
+					<label class="field">
+						<span>Topic</span>
+						<select name="topic">
+							<option>General enquiry</option>
+							<option>Partnership</option>
+							<option>Venture pitch</option>
+							<option>Investment opportunity</option>
+							<option>Group companies</option>
+							<option>Other</option>
+						</select>
+					</label>
+				</div>
+				<label class="field">
+					<span>Message</span>
+					<textarea name="message" rows="6" required maxlength="5000"></textarea>
+				</label>
+
+				<!-- Honeypot: humans never see or fill this -->
+				<label class="hp" aria-hidden="true">Leave empty <input name="_honey" type="text" tabindex="-1" autocomplete="off"></label>
+
+				<label class="check">
+					<input name="consent" type="checkbox" required>
+					<span>I agree that Vileplam may use these details to reply to my enquiry.</span>
+				</label>
+
+				<div class="form-foot">
+					<button class="btn btn-primary" type="submit">Send message</button>
+					<p class="form-status" role="status" aria-live="polite"></p>
+				</div>
+			</form>
+
+			<aside class="panel address">
+				<h2>Vileplam Enterprises Ltd</h2>
+				<address>
+					7 Thiseos<br>
+					Strovolos, 2042 Nicosia<br>
+					Cyprus
+				</address>
+				<a class="mail" href="mailto:office@vileplam.com.cy">office@vileplam.com.cy</a>
+			</aside>
+		</div>
+	</section>
+
+</main>
+
+<footer class="site-footer">
+	<div class="wrap footer-inner">
+		<span>© <span id="year">2026</span> Vileplam Enterprises Ltd · 7 Thiseos, Strovolos, 2042 Nicosia, Cyprus</span>
+		<a href="mailto:office@vileplam.com.cy">office@vileplam.com.cy</a>
+	</div>
+</footer>
+
+<script src="assets/app.js" defer></script>
 </body>
 </html>
